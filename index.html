@@ -1,166 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body style="margin: 0; padding: 0;">
+  </head>
+  <body style="margin: 0; padding: 0">
     <header>
-        <div class="left-links">
-            <a href="#" class="Menu">PROMOCIONE</a>
-            <a href="#" class="Menu">FOTOS</a>
-            <a href="#" class="Menu">SERVICIOS</a>
-            <a href="#" class="Menu">MAPA</a>
-            <a href="#" class="Menu">CONTACTO</a>
-        </div>
+      <div class="left-links">
+        <a href="#" class="Menu">PROMOCIONE</a>
+        <a href="#" class="Menu">FOTOS</a>
+        <a href="#" class="Menu">SERVICIOS</a>
+        <a href="#" class="Menu">MAPA</a>
+        <a href="#" class="Menu">CONTACTO</a>
+      </div>
 
-        <div class="right-links">
-            <img src="images/user.png" alt="" style="margin-right: -15px;">
-            <a href="#" class="Miniatura">Mi cuenta</a>
-            <span class="Miniatura">ES</span>
-            <img src="images/flag.png" alt="a flag that indicates the spanish language" style="margin-left: -15px;">
-            <img src="images/arrow.png" alt="an arrow that indicates the possibility to pick another language" style="margin-left: -15px;" class="clickable">
-        </div>
+      <div class="right-links">
+        <img src="images/user.png" alt="" style="margin-right: -15px" />
+        <a href="#" class="Miniatura">Mi cuenta</a>
+        <span class="Miniatura">ES</span>
+        <img
+          src="images/flag.png"
+          alt="a flag that indicates the spanish language"
+          style="margin-left: -15px"
+        />
+        <img
+          src="images/arrow.png"
+          alt="an arrow that indicates the possibility to pick another language"
+          style="margin-left: -15px"
+          class="clickable"
+        />
+      </div>
     </header>
 
     <main>
-        <!-- Sections foto -->
-        <section style="width: 100%; line-height: 0; position: relative;">
-            <img src="images/main.png" alt="" style="width: 100%; height: auto; display: block;">
-            <div
+      <!-- Sections foto -->
+      <section style="width: 100%; line-height: 0; position: relative">
+        <img
+          src="images/main.png"
+          alt=""
+          style="width: 100%; height: auto; display: block"
+        />
+        <div
+          style="
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            line-height: normal;
+          "
+        >
+          <p
             style="
-                position: absolute;
-                top: 250px; 
-                left: 250px;
-                line-height: normal;
-            ">
-
-            <p 
-            style="
-                color: black; 
-                font-family: 'Romanesco', Redular; 
-                font-size: 96px;
-                margin: 0;
+              color: black;
+              font-family: 'Romanesco', Redular;
+              font-size: 96px;
+              margin: 0;
             "
-            >SPA-Jodos</p>
+          >
+            SPA-Jodos
+          </p>
 
-            <p class="Titulo2"> Regálate un momento de paz y <br> consiente a tu piel en el mejor lugar </p>
-            </div>
-        </section>
+          <p class="Titulo2">
+            Regálate un momento de paz y <br />
+            consiente a tu piel en el mejor lugar
+          </p>
+        </div>
+      </section>
 
-
-        <!-- Sections formulario -->
-        <section 
+      <!-- Sections formulario -->
+      <section
         style="
-            height: 100px; 
-            background-color: #F2F6F6;
+          height: 100px;
+          background-color: #f2f6f6;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        "
+      >
+        <form
+          action=""
+          style="
             display: flex;
             justify-content: space-around;
             align-items: center;
-        "
+            gap: 25px;
+          "
         >
-            <form action="" 
-            style="
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                gap: 25px;
-            "
-            >
-                <label class="Menu" for="client_name">RESERVA TU CITA:</label>
-                <input type="text" name="client_name" placeholder="">
+          <label class="Menu" for="client_name">RESERVA TU CITA:</label>
+          <input type="text" name="client_name" placeholder="" />
 
-                <label class="Menu" for="promo_code">CÓDIGO PROMOCIONAL</label>
-                <input class="Placeholder" type="text" name="promo_code" placeholder="CODIGO">
-            </form>
-        </section>
+          <label class="Menu" for="promo_code">CÓDIGO PROMOCIONAL</label>
+          <input
+            class="Placeholder"
+            type="text"
+            name="promo_code"
+            placeholder="CODIGO"
+          />
+        </form>
+      </section>
 
+      <!-- Sections Tipos de servicio -->
+      <section class="contenedor-servicios">
+        <!-- Masaje de pies -->
+        <article class="carta-servicio">
+          <h3 class="Titulo2 header-servicio">Masaje de pies</h3>
+          <img src="images/pies.png" alt="" />
+          <div>
+            <p class="Normal">
+              Esta es una descripción de la opción en cuestión ...
+            </p>
+            <div class="footer-servicio">
+              <span class="Titulo2">$65</span>
+              <button class="btn">RESERVAR</button>
+            </div>
+          </div>
+        </article>
 
-        <!-- Sections Tipos de servicio -->
-        <section class="contenedor-servicios">
+        <!-- Masaje relajante -->
+        <article class="carta-servicio">
+          <h3 class="Titulo2 header-servicio">Masaje relajante</h3>
+          <img src="images/relajante.png" alt="" />
+          <div>
+            <p class="Normal">
+              Esta es una descripción de la opción en cuestión ...
+            </p>
+            <div class="footer-servicio">
+              <span class="Titulo2">$60</span>
+              <button class="btn">RESERVAR</button>
+            </div>
+          </div>
+        </article>
 
-            <!-- Masaje de pies -->
-            <article class="carta-servicio">
-                <h3 class="Titulo2 header-servicio">Masaje de pies</h3>
-                <img src="images/pies.png" alt="">
-                <div>
-                    <p class="Normal">Esta es una descripción de la opción en cuestión ...</p>
-                    <div class="footer-servicio">
-                        <span class="Titulo2">$65</span>
-                        <button class="btn">RESERVAR</button>
-                    </div>
-                </div>
-            </article>
+        <!-- Masaje con bambú -->
+        <article class="carta-servicio">
+          <h3 class="Titulo2 header-servicio">Masaje con bambú</h3>
+          <img src="images/bambu.png" alt="" />
+          <div>
+            <p class="Normal">
+              Esta es una descripción de la opción en cuestión ...
+            </p>
+            <div class="footer-servicio">
+              <span class="Titulo2">$58</span>
+              <button class="btn">RESERVAR</button>
+            </div>
+          </div>
+        </article>
+      </section>
 
-            <!-- Masaje relajante -->
-            <article class="carta-servicio">
-                <h3 class="Titulo2 header-servicio">Masaje relajante</h3>
-                <img src="images/relajante.png" alt="">
-                <div>
-                    <p class="Normal">Esta es una descripción de la opción en cuestión ...</p>
-                    <div class="footer-servicio">
-                        <span class="Titulo2">$60</span>
-                        <button class="btn">RESERVAR</button>
-                    </div>
-                </div>
-            </article>
+      <!-- Sections de planes -->
+      <section class="seccion-planes">
+        <h2 class="planes-titulo">Hazte socio y prueba nuestros beneficios</h2>
 
-            <!-- Masaje con bambú -->
-            <article class="carta-servicio">
-                <h3 class="Titulo2 header-servicio">Masaje con bambú</h3>
-                <img src="images/bambu.png" alt="">
-                <div>
-                    <p class="Normal">Esta es una descripción de la opción en cuestión ...</p>
-                    <div class="footer-servicio">
-                        <span class="Titulo2">$58</span>
-                        <button class="btn">RESERVAR</button>
-                    </div>
-                </div>
-            </article>
-
-        </section>
-
-        <!-- Sections de planes -->
-        <section class="seccion-planes">
-
-            <div class="contenedor-planes">
-                <article>
-
-                </article>
-
-                <article>
-
-                </article>
-
-                <article>
-
-                </article>
-
+        <div class="contenedor-planes">
+          <!-- Plan Gold -->
+          <article class="plan">
+            <div class="icon-circle">
+              <img src="images/gold.png" alt="Gold" />
             </div>
 
-        </section>
+            <h3 class="plan-title">GOLD</h3>
+
+            <button class="btn-conditions">VER CONDICIONES</button>
+
+            <ul class="plan-list">
+              <li>Gimnasio</li>
+              <li>Piscina</li>
+              <li>Todos los tratamientos</li>
+            </ul>
+          </article>
+
+          <!-- Plan Premium -->
+          <article class="plan">
+            <div class="icon-circle">
+              <img src="images/premium.png" alt="Premium" />
+            </div>
+
+            <h3 class="plan-title">PREMIUM</h3>
+
+            <button class="btn-conditions">VER CONDICIONES</button>
+
+            <ul class="plan-list">
+              <li>Gimnasio</li>
+              <li>Todos los tratamientos</li>
+            </ul>
+          </article>
+
+          <!-- Plan Plata -->
+          <article class="plan">
+            <div class="icon-circle">
+              <img src="images/plate.png" alt="Plata" />
+            </div>
+
+            <h3 class="plan-title">PLATE</h3>
+
+            <button class="btn-conditions">VER CONDICIONES</button>
+
+            <ul class="plan-list">
+              <li>Tratamientos faciales</li>
+            </ul>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="left-links">
-            <a href="#" class="Menu">politicas de cookies</a>
-            <a href="#" class="Menu">aviso legal</a>
-            <a href="#" class="Menu">proteccion de datos</a>
-            <a href="#" class="Menu">mapa del sitio</a>
-        </div>
-        <div class="right-links">
-            <span class="Menu">siguenos en</span>
-            <img src="images/rs_facebook.png" alt="icono de facebook">
-            <img src="images/rs_twiter.png" alt="icono de twitter">
-            <img src="images/rs_youtube.png" alt="icono de youtube">
-        </div>
-
+      <div class="left-links">
+        <a href="#" class="Menu">politicas de cookies</a>
+        <a href="#" class="Menu">aviso legal</a>
+        <a href="#" class="Menu">proteccion de datos</a>
+        <a href="#" class="Menu">mapa del sitio</a>
+      </div>
+      <div class="right-links">
+        <span class="Menu">siguenos en</span>
+        <img src="images/rs_facebook.png" alt="icono de facebook" />
+        <img src="images/rs_twiter.png" alt="icono de twitter" />
+        <img src="images/rs_youtube.png" alt="icono de youtube" />
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
