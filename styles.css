@@ -1,0 +1,86 @@
+header {
+    height: 70px;
+    background-color: #A3A656;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 20px;
+}
+
+header .Menu:hover {
+    color: #FFFF00;
+}
+.left-links, .right-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+input[type="text"]{
+    border:none; 
+    height: 60px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+.Titulo1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.Titulo2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* SemiBold is equivalent to font-weight 600 */
+    font-size: 32px;
+}
+
+.Miniatura {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.Menu {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+.Normal {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.Placeholder {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #9E9A9A;
+}
+
+footer {
+    height: 97px;
+    background-color: #A3A656;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+footer .Menu:hover {
+    color: #FFFF00;
+}
