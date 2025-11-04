@@ -8,7 +8,7 @@ header {
     padding-right: 20px;
 }
 
-header .Menu:hover {
+header a.Menu:hover {
     color: #FFFF00;
 }
 
@@ -157,12 +157,31 @@ display: flex;
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 97px;
-    background-color: #A3A656;
+    background-color: #384001;
     padding-left: 70px;
-    padding-right: 70px;
+    padding-right: 40px;
 }
 
-footer .Menu:hover {
+footer .left-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+footer .right-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+footer .Menu{
+    color: #A3A656;
+}
+
+footer a.Menu:hover {
     color: #FFFF00;
 }
