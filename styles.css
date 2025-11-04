@@ -11,19 +11,25 @@ header {
 header .Menu:hover {
     color: #FFFF00;
 }
+
 .left-links, .right-links {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
+
 input[type="text"]{
     border:none; 
     height: 60px;
     width: 400px;
     border-radius: 15px;
+    padding-left: 20px;
 }
 
+.clickable {
+    cursor: pointer;
+}
 
 
 
