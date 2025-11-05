@@ -89,6 +89,10 @@ display: flex;
 .seccion-planes{
     height: 770px;
     background-color: #F2F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* ====== Sección Planes ====== */
@@ -100,27 +104,24 @@ display: flex;
     justify-content: center;
 }
 
-/* contenedor que agrupa 3 planes */
-.contenedor-planes{
+.circle{
+    width: 233px;               /* Inner circle (content area) */
+    height: 233px;
+    border: 11px solid #000; /* 11px border on each side for a total of 22px */
+    background-color: #fff; /* Gold color */
+    border-radius: 50%;         /* Makes it a circle */
     display: flex;
-    gap: 60px;
-    align-items: stretch;
-    padding: 40px 70px;
-    max-width: 1200px;
-    width: 100%;
-    box-sizing: border-box;
+    align-items: center;
     justify-content: center;
+    box-sizing: content-box;    /* Ensures width/height exclude the border */
 }
 
-/* estilo de cada tarjeta de plan */
-.plan{
-    width: 320px;
-    background: #FFEFDF;
-    border-radius: 35px; /* curva bordes 35px en el PDF */
-    overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+.contenedor-planes{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
 }
 
 /* imagen del plan: uso de altura para mantener proporción según PDF (255px) */
@@ -132,161 +133,15 @@ display: flex;
     background: transparent;
 }
 
-/* cuerpo del plan */
-.plan-body{
-    padding: 24px;
+.plan{
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: space-between;
-}
-
-/* texto descriptivo */
-.plan-body .Normal{
-    margin-top: 10px;
-    color: #333;
-}
-
-/* footer de la tarjeta */
-.plan-footer{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 18px;
+    justify-content: center;
 }
 
-/* agrupación de botones del plan */
-.plan-buttons{
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
-/* botón secundario (ver condiciones) */
-.secondary-btn{
-    background: transparent;
-    border: 2px solid #A3A656;
-    color: #A3A656;
-    padding: 10px 18px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 35px; /* radio de botones */
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.secondary-btn:hover{
-    background-color: #384001; /* hover según PDF */
-    color: white;
-    border-color: #384001;
-    cursor: pointer;
-}
-
-.seccion-planes{
-  background-color: #F2F6F6;
-  height: 770px;              /* Tamaño requerido */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 28px;
-  box-sizing: border-box;
-}
-
-/* título centrado arriba */
-.planes-titulo{
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  margin: 12px 0 36px 0;
-  color: #000;
-  text-align: center;
-}
-
-/* contenedor de los 3 planes */
-.contenedor-planes{
-  width: 100%;
-  max-width: 1300px;
-  display: flex;
-  justify-content: space-between; 
-  gap: 80px;                       
-  padding: 0 70px;                
-  box-sizing: border-box;
-  align-items: flex-start;
-}
-
-
-.plan{
-  width: 320px;            
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: transparent;
-}
-
-/* círculo grande con borde oscuro */
-.icon-circle{
-  width: 260px;            
-  height: 260px;
-  border-radius: 50%;
-  background: #fff;        /* fondo blanco dentro del círculo */
-  border: 12px solid #384001; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-
-.icon-circle img{
-  width: 58%;    
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
-
-
-.plan-title{
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  margin: 6px 0 18px 0;
-  letter-spacing: 1px;
-}
-
-
-.btn-conditions{
-  background-color: #B0B25A; 
-  color: #ffffff;
-  border: none;
-  padding: 16px 68px;
-  border-radius: 35px;
-  font-weight: 700;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: none;
-  transition: background-color 0.2s ease;
-  margin-bottom: 22px;
-}
-
-
-.btn-conditions:hover{
-  background-color: #9aa04a; 
-}
-
-.plan-list{
-  list-style: disc;
-  margin: 0;
-  margin-top: 6px;
-  padding-left: 36px;   /* separación para las viñetas */
-  width: 100%;
-  max-width: 260px;     
-  text-align: left;
-  color: #111;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+.plan p{
+    margin-top: 5px;
 }
 
 

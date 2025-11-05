@@ -93,93 +93,113 @@
             gap: 25px;
           "
         >
-          <label class="Menu" for="client_name">RESERVA TU CITA:</label>
-          <input type="text" name="client_name" placeholder="" />
+            <form action="" 
+            style="
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 25px;
+            "
+            >
+                <label class="Menu" for="client_name">RESERVA TU CITA:</label>
+                <input type="text" name="client_name" placeholder="">
 
-          <label class="Menu" for="promo_code">CÓDIGO PROMOCIONAL</label>
-          <input
-            class="Placeholder"
-            type="text"
-            name="promo_code"
-            placeholder="CODIGO"
-          />
-        </form>
-      </section>
+                <label class="Menu" for="promo_code">CÓDIGO PROMOCIONAL</label>
+                <input class="Placeholder" type="text" name="promo_code" placeholder="CODIGO">
+            </form>
+        </section>
 
-      <!-- Sections Tipos de servicio -->
-      <section class="contenedor-servicios">
-        <!-- Masaje de pies -->
-        <article class="carta-servicio">
-          <h3 class="Titulo2 header-servicio">Masaje de pies</h3>
-          <img src="images/pies.png" alt="" />
-          <div>
-            <p class="Normal">
-              Esta es una descripción de la opción en cuestión ...
-            </p>
-            <div class="footer-servicio">
-              <span class="Titulo2">$65</span>
-              <button class="btn">RESERVAR</button>
-            </div>
-          </div>
-        </article>
 
-        <!-- Masaje relajante -->
-        <article class="carta-servicio">
-          <h3 class="Titulo2 header-servicio">Masaje relajante</h3>
-          <img src="images/relajante.png" alt="" />
-          <div>
-            <p class="Normal">
-              Esta es una descripción de la opción en cuestión ...
-            </p>
-            <div class="footer-servicio">
-              <span class="Titulo2">$60</span>
-              <button class="btn">RESERVAR</button>
-            </div>
-          </div>
-        </article>
+        <!-- Sections Tipos de servicio -->
+        <section class="contenedor-servicios">
 
-        <!-- Masaje con bambú -->
-        <article class="carta-servicio">
-          <h3 class="Titulo2 header-servicio">Masaje con bambú</h3>
-          <img src="images/bambu.png" alt="" />
-          <div>
-            <p class="Normal">
-              Esta es una descripción de la opción en cuestión ...
-            </p>
-            <div class="footer-servicio">
-              <span class="Titulo2">$58</span>
-              <button class="btn">RESERVAR</button>
-            </div>
-          </div>
-        </article>
-      </section>
+            <!-- Masaje de pies -->
+            <article class="carta-servicio">
+                <h3 class="Titulo2 header-servicio">Masaje de pies</h3>
+                <img src="images/pies.png" alt="">
+                <div>
+                    <p class="Normal">Esta es una descripción de la opción en cuestión ...</p>
+                    <div class="footer-servicio">
+                        <span class="Titulo2">$65</span>
+                        <button class="btn">RESERVAR</button>
+                    </div>
+                </div>
+            </article>
 
-      <!-- Sections de planes -->
-      <section class="seccion-planes">
-        <h2 class="planes-titulo">Hazte socio y prueba nuestros beneficios</h2>
+            <!-- Masaje relajante -->
+            <article class="carta-servicio">
+                <h3 class="Titulo2 header-servicio">Masaje relajante</h3>
+                <img src="images/relajante.png" alt="">
+                <div>
+                    <p class="Normal">Esta es una descripción de la opción en cuestión ...</p>
+                    <div class="footer-servicio">
+                        <span class="Titulo2">$60</span>
+                        <button class="btn">RESERVAR</button>
+                    </div>
+                </div>
+            </article>
 
-        <div class="contenedor-planes">
-          <!-- Plan Gold -->
-          <article class="plan">
-            <div class="icon-circle">
-              <img src="images/gold.png" alt="Gold" />
-            </div>
+            <!-- Masaje con bambú -->
+            <article class="carta-servicio">
+                <h3 class="Titulo2 header-servicio">Masaje con bambú</h3>
+                <img src="images/bambu.png" alt="">
+                <div>
+                    <p class="Normal">Esta es una descripción de la opción en cuestión ...</p>
+                    <div class="footer-servicio">
+                        <span class="Titulo2">$58</span>
+                        <button class="btn">RESERVAR</button>
+                    </div>
+                </div>
+            </article>
 
-            <h3 class="plan-title">GOLD</h3>
+        </section>
 
-            <button class="btn-conditions">VER CONDICIONES</button>
+        <!-- Sections de planes -->
+        <section class="seccion-planes">
 
-            <ul class="plan-list">
-              <li>Gimnasio</li>
-              <li>Piscina</li>
-              <li>Todos los tratamientos</li>
-            </ul>
-          </article>
+            <p class="Titulo1">Haste socio y prueba nuestros beneficios</p>
+            <div class="contenedor-planes">
 
-          <!-- Plan Premium -->
-          <article class="plan">
-            <div class="icon-circle">
-              <img src="images/premium.png" alt="Premium" />
+                <!-- plan oro -->
+                <article class="plan">
+                    <div class="circle">
+                        <img src="images/gold.png" alt="un imagen de corona dorada">
+                    </div>
+                    <p class="Titulo2">GOLD</p>
+                    <button class="btn">VER CONDICIONES</button>
+                    <ul>
+                        <li class="Normal">Gimnasio</li>
+                        <li class="Normal">Piscina</li>
+                        <li class="Normal">Todos los tratamientos</li>
+                    </ul>
+                </article>
+
+
+                <!-- plan premium -->
+                <article class="plan">
+                    <div class="circle">
+                        <img src="images/premium.png" alt="un imagen de corona dorada">
+                    </div>
+                    <p class="Titulo2">PREMIUM</p>
+                    <button class="btn">VER CONDICIONES</button>
+                    <ul>
+                        <li class="Normal">Gimnasio</li>
+                        <li class="Normal">Todos los tratamientos</li>
+                    </ul>
+                </article>
+
+
+                <!-- plan plate -->
+                <article class="plan">
+                    <div class="circle">
+                        <img src="images/plate.png" alt="un imagen de corona dorada">
+                    </div>
+                    <p class="Titulo2">PLATE</p>
+                    <button class="btn">VER CONDICIONES</button>
+                    <ul>
+                        <li class="Normal">Todos los tratamientos</li>
+                    </ul>
+                </article>
             </div>
 
             <h3 class="plan-title">PREMIUM</h3>
