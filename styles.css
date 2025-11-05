@@ -95,6 +95,14 @@ display: flex;
     justify-content: flex-start;
 }
 
+/* ====== Sección Planes ====== */
+.seccion-planes{
+    height: 770px; /* según indicaciones del PDF */
+    background-color: #F2F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .circle{
     width: 233px;               /* Inner circle (content area) */
@@ -116,6 +124,14 @@ display: flex;
     margin: 10px;
 }
 
+/* imagen del plan: uso de altura para mantener proporción según PDF (255px) */
+.plan img{
+    width: 100%;
+    height: 255px; /* W/H especificado en el PDF */
+    object-fit: contain;
+    display: block;
+    background: transparent;
+}
 
 .plan{
     display: flex;
@@ -129,6 +145,15 @@ display: flex;
 }
 
 
+@media (max-width: 1000px){
+  .contenedor-planes{
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    padding: 0 28px;
+  }
+  .plan{ width: 85%; max-width: 420px; }
+}
 
 .Titulo1 {
     font-family: 'Inter', sans-serif;
