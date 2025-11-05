@@ -89,28 +89,44 @@ display: flex;
 .seccion-planes{
     height: 770px;
     background-color: #F2F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 
+.circle{
+    width: 233px;               /* Inner circle (content area) */
+    height: 233px;
+    border: 11px solid #000; /* 11px border on each side for a total of 22px */
+    background-color: #fff; /* Gold color */
+    border-radius: 50%;         /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;    /* Ensures width/height exclude the border */
+}
+
+.contenedor-planes{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
 
 
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.plan p{
+    margin-top: 5px;
+}
 
 
 
