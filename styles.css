@@ -201,3 +201,7 @@ footer .Menu{
 footer a.Menu:hover {
     color: #FFFF00;
 }
+
+footer img{
+    cursor: pointer;
+}
